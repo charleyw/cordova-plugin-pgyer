@@ -1,4 +1,4 @@
-package com.example.plugin;
+package wang.imchao.plugin;
 
 import org.apache.cordova.*;
 import org.json.JSONArray;
@@ -6,7 +6,7 @@ import org.json.JSONException;
 
 import com.pgyersdk.update.PgyUpdateManager;
 
-public class Hello extends CordovaPlugin {
+public class PgyerPlugin extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {

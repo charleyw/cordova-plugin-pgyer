@@ -18,8 +18,8 @@
   <platform name="android">
 
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="Hello">
-        <param name="android-package" value="com.example.plugin.Hello"/>
+      <feature name="Pgyer">
+        <param name="android-package" value="wang.imchao.plugin.PgyerPlugin"/>
       </feature>
     </config-file>
 
@@ -34,7 +34,7 @@
 
     <source-file src="src/android/pgyer_sdk_2.1.2.jar" target-dir="libs"/>
 
-    <source-file src="src/android/Hello.java" target-dir="src/com/example/plugin/"/>
+    <source-file src="src/android/PgyerPlugin.java" target-dir="src/wang/imchao/plugin/"/>
   </platform>
 
   <platform name="ios">
