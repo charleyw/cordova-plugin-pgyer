@@ -23,6 +23,17 @@
       </feature>
     </config-file>
 
+    <config-file target="AndroidManifest.xml" parent="/manifest">
+      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取网络状态 -->
+      <uses-permission android:name="android.permission.INTERNET" /> <!-- 网络通信-->
+      <uses-permission android:name="android.permission.READ_PHONE_STATE" />  <!-- 获取设备信息 -->
+      <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取MAC地址-->
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 读写sdcard，storage等等 -->
+      <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 允许程序录制音频 -->
+    </config-file>
+
+    <source-file src="src/android/pgyer_sdk_2.1.2.jar" target-dir="libs"/>
+
     <source-file src="src/android/Hello.java" target-dir="src/com/example/plugin/"/>
   </platform>
 
