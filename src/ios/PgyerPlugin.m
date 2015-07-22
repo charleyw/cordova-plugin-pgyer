@@ -1,7 +1,7 @@
-#import "HWPHello.h"
+#import "PgyerPlugin.h"
 #import <PgySDK/PgyManager.h>
 
-@implementation HWPHello
+@implementation PgyerPlugin
 
 - (void)init:(CDVInvokedUrlCommand*)command
 {

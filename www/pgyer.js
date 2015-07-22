@@ -2,6 +2,6 @@
 
 module.exports = {
     init: function (name, successCallback, errorCallback) {
-        cordova.exec(successCallback, errorCallback, "Hello", "init", [name]);
+        cordova.exec(successCallback, errorCallback, "Pgyer", "init", [name]);
     }
 };

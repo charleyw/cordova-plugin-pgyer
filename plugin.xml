@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="com.example.hello"
-        version="0.7.0">
+        id="wang.imchao.plugin.pgyer"
+        version="0.0.1">
 
   <name>Hello</name>
 
@@ -9,10 +9,10 @@
     <engine name="cordova" version=">=3.4.0"/>
   </engines>
 
-  <asset src="www/hello.js" target="js/hello.js"/>
+  <asset src="www/pgyer.js" target="js/pgyer.js"/>
 
-  <js-module src="www/hello.js" name="hello">
-    <clobbers target="hello" />
+  <js-module src="www/pgyer.js" name="pgyer">
+    <clobbers target="pgyer" />
   </js-module>
 
   <platform name="android">
@@ -40,8 +40,8 @@
   <platform name="ios">
     
     <config-file target="config.xml" parent="/widget">
-      <feature name="Hello">
-        <param name="ios-package" value="HWPHello" />
+      <feature name="Pgyer">
+        <param name="ios-package" value="PgyerPlugin" />
       </feature>
     </config-file>
 
@@ -54,8 +54,8 @@
 
     <framework src="src/ios/lib/PgySDK.framework" custom="true" />
 
-    <header-file src="src/ios/HWPHello.h" target-dir="HelloPlugin"/>
-    <source-file src="src/ios/HWPHello.m" target-dir="HelloPlugin"/>
+    <header-file src="src/ios/PgyerPlugin.h" target-dir="PgyerPlugin"/>
+    <source-file src="src/ios/PgyerPlugin.m" target-dir="PgyerPlugin"/>
   </platform>
 
 </plugin>

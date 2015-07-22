@@ -1,6 +1,6 @@
 #import <Cordova/CDV.h>
 
-@interface HWPHello : CDVPlugin
+@interface PgyerPlugin : CDVPlugin
 
 - (void) init:(CDVInvokedUrlCommand*)command;
 
