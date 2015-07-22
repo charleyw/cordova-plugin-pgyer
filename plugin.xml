@@ -45,6 +45,15 @@
       </feature>
     </config-file>
 
+    <framework src="CoreTelephony.framework" weak="true" />
+    <framework src="OpenGLES.framework" weak="true" />
+    <framework src="SceneKit.framework" weak="true" />
+    <framework src="AudioToolbox.framework" weak="true" />
+    <framework src="AvFoundation.framework" weak="true" />
+    <framework src="SystemConfiguration.framework" weak="true" />
+
+    <framework src="src/ios/lib/PgySDK.framework" custom="true" />
+
     <header-file src="src/ios/HWPHello.h" target-dir="HelloPlugin"/>
     <source-file src="src/ios/HWPHello.m" target-dir="HelloPlugin"/>
   </platform>

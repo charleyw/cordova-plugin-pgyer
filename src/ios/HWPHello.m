@@ -1,19 +1,12 @@
 #import "HWPHello.h"
+#import <PgySDK/PgyManager.h>
 
 @implementation HWPHello
 
-- (void)greet:(CDVInvokedUrlCommand*)command
+- (void)init:(CDVInvokedUrlCommand*)command
 {
-
-    NSString* callbackId = [command callbackId];
-    NSString* name = [[command arguments] objectAtIndex:0];
-    NSString* msg = [NSString stringWithFormat: @"Hello, %@", name];
-
-    CDVPluginResult* result = [CDVPluginResult
-                               resultWithStatus:CDVCommandStatus_OK
-                               messageAsString:msg];
-
-    [self success:result callbackId:callbackId];
+	[[PgyManager sharedPgyManager] startManagerWithAppId:@"91a10d133200735c9fb7097e0d2b48c5"];
+	[[PgyManager sharedPgyManager] checkUpdate];
 }
 
 @end

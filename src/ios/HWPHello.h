@@ -2,6 +2,6 @@
 
 @interface HWPHello : CDVPlugin
 
-- (void) greet:(CDVInvokedUrlCommand*)command;
+- (void) init:(CDVInvokedUrlCommand*)command;
 
 @end
