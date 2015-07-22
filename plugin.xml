@@ -3,7 +3,7 @@
         id="wang.imchao.plugin.pgyer"
         version="0.0.1">
 
-  <name>Hello</name>
+  <name>PgyerUpdateCheck</name>
 
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
