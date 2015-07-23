@@ -21,6 +21,7 @@
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="Pgyer">
         <param name="android-package" value="wang.imchao.plugin.PgyerPlugin"/>
+        <param name="onload" value="true" />
       </feature>
     </config-file>
 
