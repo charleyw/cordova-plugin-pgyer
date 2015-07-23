@@ -48,6 +48,7 @@
     <config-file target="config.xml" parent="/widget">
       <feature name="Pgyer">
         <param name="ios-package" value="PgyerPlugin" />
+        <param name="onload" value="true" />
       </feature>
     </config-file>
 
