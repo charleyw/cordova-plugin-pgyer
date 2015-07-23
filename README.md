@@ -8,22 +8,12 @@ Cordova 蒲公英自动更新插件
 * iOS
 * Android
 
-## 手动安装
-1. 安装插件  
+## 安装
 
-		cordova plugin add https://github.com/charleyw/cordova-plugin-pgyer.git
-		
-2. iOS  
-修改下面的文件，将第8行的APP_ID替换成你自己的APP_ID。  
-_platforms/ios/**YourProjectName**/Plugins/wang.imchao.plugin.pgyer/PgyerPlugin/PgyerPlugin.m_
+	cordova plugin add https://github.com/charleyw/cordova-plugin-pgyer.git --variable ANDROID_APP_ID=[你的Android App ID] --variable IOS_APP_ID=[你的iOS App ID]
 
-		[[PgyManager sharedPgyManager] startManagerWithAppId:@"APP_ID"];
-3. Android  
-修改下面的文件，将第16行的APP_ID替换成你自己的APP_ID。  
-_platforms/android/src/wang/imchao/plugin/PgyerPlugin.java_
+两个参数都必须同时提供才能正确安装。			  
 
-		PgyUpdateManager.register(cordova.getActivity(), "APP_ID");
-	  
 ## TODO
 
-* 使用变量设置APP_ID
+* ~~使用变量设置APP_ID~~
