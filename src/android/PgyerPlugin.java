@@ -23,7 +23,7 @@ public class PgyerPlugin extends CordovaPlugin {
             try {
                 ApplicationInfo applicationInfo = cordova.getActivity().getPackageManager().getApplicationInfo(cordova.getActivity().getPackageName(), PackageManager.GET_META_DATA);
                 Bundle bundle = applicationInfo.metaData;
-                androidAppID = bundle.getString("ANDROID_APP_ID");
+                androidAppID = bundle.getString("PGYER_APP_ID");
             } catch (NameNotFoundException e) {
                 Log.e(TAG, "Failed to load meta-data, NameNotFound: " + e.getMessage());
             } catch (NullPointerException e) {

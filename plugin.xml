@@ -16,6 +16,7 @@
   </js-module>
 
   <platform name="android">
+    <preference name="ANDROID_APP_ID" />
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="Pgyer">
@@ -33,7 +34,7 @@
     </config-file>
 
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <meta-data android:name="ANDROID_APP_ID" android:value="91a10d133200735c9fb7097e0d2b48c5" />
+      <meta-data android:name="PGYER_APP_ID" android:value="$ANDROID_APP_ID" />
     </config-file>
 
     <source-file src="src/android/pgyer_sdk_2.1.2.jar" target-dir="libs"/>
