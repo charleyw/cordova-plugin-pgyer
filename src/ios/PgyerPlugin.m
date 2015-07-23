@@ -5,7 +5,8 @@
 
 - (void)init:(CDVInvokedUrlCommand*)command
 {
-	[[PgyManager sharedPgyManager] startManagerWithAppId:@"91a10d133200735c9fb7097e0d2b48c5"];
+	NSString *appID = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"PgyerAppID"];
+	[[PgyManager sharedPgyManager] startManagerWithAppId:appID];
 	[[PgyManager sharedPgyManager] checkUpdate];
 }
 
