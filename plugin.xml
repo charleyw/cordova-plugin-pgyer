@@ -32,6 +32,10 @@
       <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 允许程序录制音频 -->
     </config-file>
 
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+      <meta-data android:name="ANDROID_APP_ID" android:value="91a10d133200735c9fb7097e0d2b48c5" />
+    </config-file>
+
     <source-file src="src/android/pgyer_sdk_2.1.2.jar" target-dir="libs"/>
 
     <source-file src="src/android/PgyerPlugin.java" target-dir="src/wang/imchao/plugin/"/>
