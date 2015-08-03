@@ -5,7 +5,9 @@
 
 - (void)pluginInitialize
 {
-    NSString *appID = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"PgyerAppID"];
+    CDVViewController *viewController = (CDVViewController *)self.viewController;
+    NSString *appID = [viewController.settings objectForKey:@"appid"];
+
     [[PgyManager sharedPgyManager] startManagerWithAppId:appID];
     [[PgyManager sharedPgyManager] checkUpdate];
     NSLog(@"Pgyer update checke registered");
