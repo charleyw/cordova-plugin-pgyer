@@ -1,0 +1,23 @@
+{
+    "version": "0.0.2",
+    "name": "wang.imchao.plugin.pgyer",
+    "cordova_name": "PgyerUpdateCheck",
+    "description": "蒲公英自动更新插件",
+    "license": "MIT license",
+    "repo": "https://github.com/charleyw/cordova-plugin-pgyer",
+    "issue": "https://github.com/charleyw/cordova-plugin-pgyer/issues",
+    "keywords": [
+        "autoupdate",
+        "pgyer"
+    ],
+    "platforms": [
+        "android",
+        "ios"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.4.0"
+        }
+    ]
+}
