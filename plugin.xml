@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
         id="wang.imchao.plugin.pgyer"
-        version="0.0.1">
+        version="0.0.2">
 
   <name>PgyerUpdateCheck</name>
+  <license>MIT license</license>
+  <description>蒲公英自动更新插件</description>
+  <keywords>autoupdate, pgyer</keywords>
+  <repo>https://github.com/charleyw/cordova-plugin-pgyer</repo>
+  <issue>https://github.com/charleyw/cordova-plugin-pgyer/issues</issue>
 
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
