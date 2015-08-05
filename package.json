@@ -1,6 +1,6 @@
 {
     "version": "0.0.2",
-    "name": "wang.imchao.plugin.pgyer",
+    "name": "cordova-plugin-pgyer",
     "cordova_name": "PgyerUpdateCheck",
     "description": "蒲公英自动更新插件",
     "license": "MIT license",
