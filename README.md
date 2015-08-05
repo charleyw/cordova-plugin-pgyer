@@ -12,8 +12,10 @@ Cordova 蒲公英自动更新插件
 
 	cordova plugin add https://github.com/charleyw/cordova-plugin-pgyer.git --variable ANDROID_APP_ID=[你的Android App ID] --variable IOS_APP_ID=[你的iOS App ID]
 
-两个参数都必须同时提供才能正确安装。			  
+两个参数都必须同时提供才能正确安装。
 
 ## TODO
 
-* ~~使用变量设置APP_ID~~
+## Liscense
+
+© 2015 Wang Chao. This code is distributed under the MIT license.
