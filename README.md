@@ -17,7 +17,7 @@ Cordova 蒲公英自动更新插件
 ## 使用
 
 弹出反馈窗口
-pgyer.popup()
+pgyer.showFeedBackBox()
 
 ## TODO
 

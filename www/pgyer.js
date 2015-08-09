@@ -4,7 +4,7 @@ module.exports = {
     init: function (name, successCallback, errorCallback) {
         cordova.exec(successCallback, errorCallback, "Pgyer", "init", [name]);
     },
-    popup: function (name, successCallback, errorCallback) {
-    	cordova.exec(successCallback, errorCallback, "Pgyer", "popup", [name]);
+    showFeedBackBox: function (name, successCallback, errorCallback) {
+    	cordova.exec(successCallback, errorCallback, "Pgyer", "showFeedBackBox", [name]);
     }
 };

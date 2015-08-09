@@ -59,7 +59,7 @@ public class PgyerPlugin extends CordovaPlugin {
 
         final String appID = androidAppID;
 
-        if (action.equals("popup")) {
+        if (action.equals("showFeedBackBox")) {
             PgyFeedback.getInstance().show(this.cordova.getActivity(), appID);
             callbackContext.success("");
             return true;
