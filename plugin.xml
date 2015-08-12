@@ -40,10 +40,10 @@
     </config-file>
 
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <meta-data android:name="PGYER_APP_ID" android:value="$ANDROID_APP_ID" />
+      <meta-data android:name="PGYER_APPID" android:value="$ANDROID_APP_ID" />
     </config-file>
 
-    <source-file src="src/android/pgyer_sdk_2.1.2.jar" target-dir="libs"/>
+    <source-file src="src/android/pgyer_sdk_2.2.jar" target-dir="libs"/>
 
     <source-file src="src/android/PgyerPlugin.java" target-dir="src/wang/imchao/plugin/"/>
   </platform>

@@ -18,26 +18,10 @@ public class PgyerPlugin extends CordovaPlugin {
     @Override
     public void initialize(final CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
-        String androidAppID = "";
-        try {
-            ApplicationInfo applicationInfo = cordova.getActivity().getPackageManager().getApplicationInfo(cordova.getActivity().getPackageName(), PackageManager.GET_META_DATA);
-            Bundle bundle = applicationInfo.metaData;
-            androidAppID = bundle.getString("PGYER_APP_ID");
-        } catch (NameNotFoundException e) {
-            Log.e(TAG, "Failed to load meta-data, NameNotFound: " + e.getMessage());
-        } catch (NullPointerException e) {
-            Log.e(TAG, "Failed to load meta-data, NullPointer: " + e.getMessage());
-        }
-
-        if(androidAppID.equals("")){
-            return;
-        }
-
-        final String appID = androidAppID;
         cordova.getThreadPool().execute(new Runnable() {
             public void run() {
-                PgyUpdateManager.register(cordova.getActivity(), appID);
-                Log.i(TAG, "Pgyer update check registered, app ID: " + appID);
+                PgyUpdateManager.register(cordova.getActivity());
+                Log.i(TAG, "Pgyer update check registered");
             }
         });
     }
