@@ -1,5 +1,5 @@
 #import "PgyerPlugin.h"
-#import <PgySDK/PgyManager.h>
+#import <PgyUpdate/PgyUpdateManager.h>
 
 @implementation PgyerPlugin
 
@@ -8,8 +8,8 @@
     CDVViewController *viewController = (CDVViewController *)self.viewController;
     NSString *appID = [viewController.settings objectForKey:@"appid"];
 
-    [[PgyManager sharedPgyManager] startManagerWithAppId:appID];
-    [[PgyManager sharedPgyManager] checkUpdate];
+    [[PgyUpdateManager sharedPgyManager] startManagerWithAppId:appID];
+	[[PgyUpdateManager sharedPgyManager] checkUpdate];
     NSLog(@"Pgyer update checke registered");
 }
 @end
